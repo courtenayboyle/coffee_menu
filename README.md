@@ -19,3 +19,4 @@ Directions for testing Stripe Integration:
 
   Feel free to leave feedback!
 
+Check it out! https://coffee-shop-xwct.onrender.com
