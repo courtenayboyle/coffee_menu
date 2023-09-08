@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link href="style.css" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+		integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+	<title>Cafe</title>
+	<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+	<link href="success.html" rel="import" />
+</head>
+<header>
+	<!--Nav Bar-->
+	<a href="#" class="logo">
+		<img id="logoImg" src="img/logo.jpeg" alt="">
+	</a>
+	<!--Links-->
+	<div class="navbar-items">
+	<ul class="navbar">
+		<li><a href="#home">Home</a></li>
+		<li><a href="#about">About</a></li>
+		<li><a href="#menu">Menu</a></li>
+	</ul>
+</div>
+	<!--<div>-->
+	<!--<button class="bx bx-cart-alt" id="modalOpen" data-toggle="modal" data-target="#modal"></button>-->
+	<button class="bx bx-cart-alt" id="modalOpen" data-toggle="modal" data-target="#myModal"></button>
+	<div id="cartBadge">0</div>
+	<!--</div>-->
+</header>
+
+<!--Body-->
+
+<body>
+	<!-- Scrollable modal -->
+	<div class="modal-dialog modal-dialog-scrollable" id="myModal">
+		<div class="modal-content">
+			<span id="closeBtn" class="close">&times;</span>
+			<div id="modal-cart-title">
+				<h1 class="modal-title" id="modal-h1">Your Order</h1>
+			</div>
+			<div class="cartHouse" id="cartHouse">
+				<div class="row">
+					<div class="row" id="item_rows">
+						<h5 class="col-5" id="tag">Item</h5>
+						<h5 class="col-4" id="quantity">Quantity</h5>
+						<h5 class="col-3" id="price">Total</h5>
+					</div>
+					<div class="items" id="items_in_cart">
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="modal-footer" id="checkout">
+		</div>
+	</div>
+	<div class="modal-overlay" id="modal-overlay">
+	</div>
+
+
+
+	<!--Home-->
+	<section class="home" id="home">
+		<div class="home-text">
+			<h1>Welcome, Friends</h1>
+			<h3>Online Ordering and Walk-In Available</h3>
+			<br><br>
+			<a href="#menu" class="btn">MENU</a>
+		</div>
+	</section> 
+
+	<!--About-->
+	<section class="about" id="about">
+		<div class="about-text">
+			<div class="about-img">
+				<img src="img/coffee_about_us.jpg" alt="">
+			</div>
+			<div class="about-text"></div>
+			<h2>Our Story</h2><br><br>
+			<p>Founded in celebration of all that a great cup of coffee offers the senses and ignites joy, in 2023 we opened
+				the doors to our first cafe in Charlotte. From day one we have approached every decision with intention, purpose
+				and whimsy - from the recipes we create, to the spaces we curate. We want ours to be a place of community,
+				comfort and nourishment.</p>
+			<!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>-->
+			<a href="#menu" class="btn">Menu</a>
+		</div>
+	</section>
+
+	<!--Menu-->
+	<section class="menu" id="menu">
+		<div class="container">
+			<h2>Menu</h2>
+		</div>
+	</section>
+
+	<div class="coffee-menu">
+		<section class="coffee-title">
+			<h2>Coffee & Espresso Drinks</h2>
+		</section>
+		<div class="card-container">
+		</div>
+	</div>
+
+	<div class="dessert-menu">
+		<section class="dessert-title">
+			<h2>Dessert Bites</h2>
+		</section>
+		<div class="card-container-2">
+		</div>
+	</div>
+
+
+
+
+	<!-------FOOTER-------->
+	<footer>
+		<div class="social">
+			<a href="https://github.com/courtenayboyle"><i class="fa-brands fa-github"></i></a>
+			<a href="https://www.linkedin.com/in/courtenay-boyle-290707269/"><i class="fa-brands fa-linkedin"></i></a>
+		</div>
+		<p class="end">Copyright by Courtenay Boyle</p>
+	</footer>
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<script src="https://kit.fontawesome.com/8a0201065b.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+		integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+		integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+		crossorigin="anonymous"></script>
+	<script async src="app.js"></script>
+
+
+</body>
+
+</html>
