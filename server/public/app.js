@@ -185,7 +185,7 @@ for (let i = 0; i < carts1.length; i++) {
 		cart_numbers(cardData[i]);
 		totalCost(cardData[i]);
 		location.reload();
-		event.preventDefault();
+		//event.preventDefault();
 	})
 };
 for (let i = 0; i < carts2.length; i++) {
@@ -193,7 +193,7 @@ for (let i = 0; i < carts2.length; i++) {
 		cart_numbers(cardData2[i]);
 		totalCost(cardData2[i]);
 		location.reload();
-		event.preventDefault();
+		//event.preventDefault();
 
 	})
 };
@@ -210,7 +210,7 @@ function onLoadCartNumbers() {
 
 //update cart icon with current number of items in cart
 function cart_numbers(cardData) {
-	event.preventDefault();
+	//event.preventDefault();
 	let productNumbers = localStorage.getItem('cart_numbers');
 	productNumbers = parseFloat(productNumbers);
 	if (productNumbers) {
@@ -307,7 +307,7 @@ function displayCart() {
 
 	}
 	document.addEventListener("DOMContentLoaded", async (e) => {
-		if (e && e.preventDefault) { e.preventDefault(); }
+		//if (e && e.preventDefault) { e.preventDefault(); };
 		const checkout = document.getElementById("checkingOut");
 		let incrementQuantity = document.querySelectorAll('.plus');
 		let decrementQuantity = document.querySelectorAll('.minus');
